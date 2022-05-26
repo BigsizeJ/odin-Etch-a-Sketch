@@ -84,6 +84,6 @@ BOARDSIZE.addEventListener("mousemove", displayRange)
 
 CLEAR.addEventListener("click", clearBoard)
 RANDOM.addEventListener("click", rainbowMode)
-COLOR.addEventListener("change", changeColor)
+COLOR.addEventListener("change", changeColor)   
 ERASER.addEventListener("click", changeColor)
 COLOR_MODE.addEventListener("click", changeColor)
