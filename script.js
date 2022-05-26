@@ -1,7 +1,9 @@
 const CONTAINER = document.querySelector(".container")
 const BOARDSIZE = document.querySelector(".boardsize")
-const RESET = document.querySelector(".reset")
+const CLEAR = document.querySelector(".clear")
 const COLOR = document.querySelector(".color")
+const RANDOM = document.querySelector(".random")
+
 
 let currentColor = "#000"
 
@@ -35,13 +37,19 @@ function clearBoard(){
 }
 
 function changeColor(){
-    currentColor = this.value
+    currentColor = COLOR.value
 }
 
 
+function rainbowMode(){
+
+}
+
 createBoard()
+
+
+
 BOARDSIZE.addEventListener("change", changeBoard)
-
-
-RESET.addEventListener("click", clearBoard)
+CLEAR.addEventListener("click", clearBoard)
+RANDOM.addEventListener("click", rainbowMode)
 COLOR.addEventListener("change", changeColor)
