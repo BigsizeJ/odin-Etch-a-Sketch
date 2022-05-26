@@ -6,6 +6,9 @@ const RANDOM = document.querySelector(".random")
 const ERASER = document.querySelector(".eraser")
 const COLOR_MODE = document.querySelector(".colorMode")
 const BTN = document.querySelectorAll(".btn")
+const RANGE = document.querySelector(".displayRange")
+
+
 let currentColor = "#000"
 let test = null
 
@@ -27,6 +30,11 @@ function createBoard(arg1 = 16, arg2 = 16){
 
 function changeBoard(){
     createBoard(this.value, this.value)
+    RANGE.innerText = `${this.value}x${this.value}`
+}
+
+function displayRange(){
+    RANGE.innerText = `${this.value}x${this.value}`
 }
 
 function draw(){
@@ -72,6 +80,8 @@ createBoard()
 
 
 BOARDSIZE.addEventListener("change", changeBoard)
+BOARDSIZE.addEventListener("mousemove", displayRange)
+
 CLEAR.addEventListener("click", clearBoard)
 RANDOM.addEventListener("click", rainbowMode)
 COLOR.addEventListener("change", changeColor)
