@@ -2,7 +2,7 @@
     --size: 16;
     --base-color: #ededed;
     --secondary-color: #fefefe;
-    --dark-color: rgb(45, 45, 45);
+    --dark-color: #1a1919;
 }
 
 body{
@@ -20,6 +20,7 @@ body{
 .board h1{
     font-weight: 700;
     color: var(--dark-color)
+
 }
 
 
