@@ -6,14 +6,19 @@
 }
 
 body{
+    margin: 0;
+    padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--base-color);
+    position: relative;
+}
+
+.content{
     display: flex;
     gap: 20%;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+
     text-align: center;
 }
 
@@ -90,4 +95,14 @@ body{
     margin: 0px;
     padding: 0px;
     color: red;
+}
+
+footer{
+    font-size: 20px;
+    bottom: -100px;
+    position: absolute;
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    text-align: center;
+    width: 100%;
 }
